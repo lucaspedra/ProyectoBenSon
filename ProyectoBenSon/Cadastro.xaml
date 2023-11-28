@@ -1,0 +1,23 @@
+﻿<Window x:Class="ProyectoBenSon.Cadastro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoBenSon"
+        mc:Ignorable="d"
+       Height="550" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="20" FontWeight="Bold" FontSize="22" Text="REGISTRO USUÁRIO" VerticalAlignment="Top"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="40,68,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="boxNome" MaxLength="40" Margin="40,99,40,0" TextWrapping="NoWrap"  VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="40,139,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="boxEmail" MaxLength="40" Margin="40,170,40,0" TextWrapping="NoWrap"  VerticalAlignment="Top"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="40,207,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="boxPass" MaxLength="20" Height="30" Margin="40,238,40,0"  VerticalAlignment="Top"/>
+        <Label Content="Repetir contraseña" HorizontalAlignment="Left" Margin="40,276,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="boxReptPass" MaxLength="20" Height="30" Margin="40,313,40,0"  VerticalAlignment="Top"/>
+        <Button Content="Registrar" Margin="40,370,40,0" VerticalAlignment="Top" Click="btnCadastro" />
+        <Button Content="Cancelar" IsCancel="True" Margin="40,442,40,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
